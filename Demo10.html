@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+            function abc(){
+                   name = document.getElementById('uname').value;
+                   pass = document.getElementById('upass').value;
+
+                   localStorage.setItem("username",name);
+            }
+
+    </script>
+</head>
+<body>
+
+    <form>
+        name :<input type="text" name="uname" id="uname"><br>
+        pass :<input type="text" name="upass" id="upass"><br>
+
+        <input type="submit" value="Store" onclick="abc()">
+
+
+
+    </form>
+</body>
+</html>
